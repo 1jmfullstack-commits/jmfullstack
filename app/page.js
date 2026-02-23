@@ -284,4 +284,106 @@ subtitle: {
     position: "relative",
     zIndex: 1,
   },
+  section: {
+  padding: "140px 32px",
+},
+
+container: {
+  maxWidth: 1300,
+  margin: "0 auto",
+  display: "grid",
+  gridTemplateColumns: "1fr 1fr",
+  gap: 80,
+  alignItems: "center",
+},
+
+left: {
+  display: "flex",
+  flexDirection: "column",
+},
+
+tag: {
+  fontSize: 12,
+  letterSpacing: 2,
+  opacity: 0.5,
+  marginBottom: 20,
+},
+
+title: {
+  fontSize: 42,
+  lineHeight: 1.2,
+  marginBottom: 24,
+},
+
+text: {
+  fontSize: 18,
+  opacity: 0.7,
+  marginBottom: 40,
+},
+
+metrics: {
+  display: "flex",
+  gap: 20,
+},
+
+metricCard: {
+  padding: "20px 30px",
+  borderRadius: 20,
+  background: "rgba(255,255,255,0.05)",
+  backdropFilter: "blur(10px)",
+  border: "1px solid rgba(255,255,255,0.08)",
+},
+
+metricNumber: {
+  fontSize: 28,
+  fontWeight: 700,
+  background: "linear-gradient(90deg,#6C63FF,#00D4FF)",
+  WebkitBackgroundClip: "text",
+  WebkitTextFillColor: "transparent",
+},
+
+metricLabel: {
+  fontSize: 14,
+  opacity: 0.6,
+},
+
+right: {
+  display: "flex",
+  justifyContent: "center",
+},
+
+phone: {
+  width: 300,
+  height: 600,
+  borderRadius: 40,
+  padding: 12,
+  background: "linear-gradient(145deg,#111,#000)",
+  boxShadow: "0 30px 80px rgba(0,0,0,0.6)",
+  position: "relative",
+},
+
+phoneScreen: {
+  width: "100%",
+  height: "100%",
+  borderRadius: 30,
+  background: "linear-gradient(180deg,#0f172a,#020617)",
+  padding: 20,
+  display: "flex",
+  flexDirection: "column",
+  gap: 20,
+},
+
+appHeader: {
+  fontWeight: 700,
+  fontSize: 18,
+  marginBottom: 20,
+},
+
+appCard: {
+  padding: 20,
+  borderRadius: 20,
+  background: "rgba(255,255,255,0.06)",
+  border: "1px solid rgba(255,255,255,0.08)",
+  fontSize: 14,
+}
 };
