@@ -67,15 +67,23 @@ function Projects() {
 
 function CTA() {
   return (
-    <LeadForm source="landing" />
-    <section id="contact" style={styles.ctaSection}>
-      <h2 style={{ fontSize: 42, marginBottom: 20 }}>
-        Let’s Build Something Massive.
-      </h2>
-      <a href="mailto:hola@jmfullstack.lat" style={styles.cta}>
-        hola@jmfullstack.lat
-      </a>
-    </section>
+    <>
+      <section id="contact" style={styles.ctaSection}>
+        <h2 style={{ fontSize: 42, marginBottom: 20 }}>
+          Let’s Build Something Massive.
+        </h2>
+
+        <div style={{ maxWidth: 600, margin: "40px auto" }}>
+          <LeadForm source="landing" />
+        </div>
+
+        <div style={{ marginTop: 40 }}>
+          <a href="mailto:hola@jmfullstack.lat" style={styles.cta}>
+            hola@jmfullstack.lat
+          </a>
+        </div>
+      </section>
+    </>
   );
 }
 
