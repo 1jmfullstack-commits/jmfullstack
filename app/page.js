@@ -48,6 +48,68 @@ function Hero() {
   );
 }
 
+function PersonalBrand() {
+  return (
+    <section style={styles.section}>
+      <div style={styles.container}>
+        
+        <div style={styles.left}>
+          <div style={styles.tag}>PERSONAL BRAND ECOSYSTEM</div>
+
+          <h2 style={styles.title}>
+            We Built a High-Conversion Portal for a Personal Brand
+          </h2>
+
+          <p style={styles.text}>
+            For <strong>vamonene.com</strong>, we designed and developed the
+            complete digital ecosystem — landing architecture, mobile-first
+            UX, monetization flow and growth automation.
+          </p>
+
+          <div style={styles.metrics}>
+            <div style={styles.metricCard}>
+              <div style={styles.metricNumber}>100–120</div>
+              <div style={styles.metricLabel}>New Users / Day</div>
+            </div>
+
+            <div style={styles.metricCard}>
+              <div style={styles.metricNumber}>+340%</div>
+              <div style={styles.metricLabel}>Engagement Growth</div>
+            </div>
+          </div>
+
+          <p style={{opacity:0.6, marginTop:20}}>
+            From concept to scale. Strategy, UX, full-stack development and automation.
+          </p>
+        </div>
+
+        <div style={styles.right}>
+          <div style={styles.phone}>
+            <div style={styles.phoneScreen}>
+              <div style={styles.appHeader}>
+                Vamo Nene
+              </div>
+
+              <div style={styles.appCard}>
+                Exclusive Content
+              </div>
+
+              <div style={styles.appCard}>
+                Premium Access Portal
+              </div>
+
+              <div style={styles.appCard}>
+                Community & Updates
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  );
+}
+
 function Projects() {
   return (
     <section style={styles.gridSection}>
