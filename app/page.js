@@ -50,57 +50,45 @@ function Hero() {
 
 function PersonalBrand() {
   return (
-    <section style={styles.section}>
-      <div style={styles.container}>
-        
-        <div style={styles.left}>
-          <div style={styles.tag}>PERSONAL BRAND ECOSYSTEM</div>
+    <section style={styles.pbSection}>
+      <div style={styles.pbContainer}>
 
-          <h2 style={styles.title}>
-            We Built a High-Conversion Portal for a Personal Brand
+        <div style={styles.pbLeft}>
+          <div style={styles.pbTag}>PERSONAL BRAND CASE STUDY</div>
+
+          <h2 style={styles.pbTitle}>
+            From Content Creator to Scalable Platform
           </h2>
 
-          <p style={styles.text}>
-            For <strong>vamonene.com</strong>, we designed and developed the
-            complete digital ecosystem — landing architecture, mobile-first
-            UX, monetization flow and growth automation.
+          <p style={styles.pbText}>
+            We designed and developed the full digital ecosystem for
+            <strong> vamonene.com</strong> — including growth automation,
+            premium access architecture and high-conversion UX.
           </p>
 
-          <div style={styles.metrics}>
-            <div style={styles.metricCard}>
-              <div style={styles.metricNumber}>100–120</div>
-              <div style={styles.metricLabel}>New Users / Day</div>
+          <div style={styles.pbStats}>
+            <div style={styles.pbStatBox}>
+              <div style={styles.pbStatNumber}>100–120</div>
+              <div style={styles.pbStatLabel}>New Users Daily</div>
             </div>
 
-            <div style={styles.metricCard}>
-              <div style={styles.metricNumber}>+340%</div>
-              <div style={styles.metricLabel}>Engagement Growth</div>
+            <div style={styles.pbStatBox}>
+              <div style={styles.pbStatNumber}>+212%</div>
+              <div style={styles.pbStatLabel}>Conversion Growth</div>
             </div>
           </div>
-
-          <p style={{opacity:0.6, marginTop:20}}>
-            From concept to scale. Strategy, UX, full-stack development and automation.
-          </p>
         </div>
 
-        <div style={styles.right}>
+        <div style={styles.pbRight}>
+          <div style={styles.glow}></div>
+
           <div style={styles.phone}>
             <div style={styles.phoneScreen}>
-              <div style={styles.appHeader}>
-                Vamo Nene
-              </div>
-
-              <div style={styles.appCard}>
-                Exclusive Content
-              </div>
-
-              <div style={styles.appCard}>
-                Premium Access Portal
-              </div>
-
-              <div style={styles.appCard}>
-                Community & Updates
-              </div>
+              <div style={styles.appHeader}>Vamo Nene</div>
+              <div style={styles.appCard}>Premium Portal Access</div>
+              <div style={styles.appCard}>Exclusive Content</div>
+              <div style={styles.appCard}>Community System</div>
+              <div style={styles.appCard}>Automated Onboarding</div>
             </div>
           </div>
         </div>
@@ -109,7 +97,6 @@ function PersonalBrand() {
     </section>
   );
 }
-
 function Projects() {
   return (
     <section style={styles.gridSection}>
