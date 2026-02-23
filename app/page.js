@@ -1,6 +1,5 @@
 "use client";
 
-import { useEffect, useState } from "react";
 import LeadForm from "./components/LeadForm";
 
 const projects = [
@@ -16,11 +15,14 @@ export default function Home() {
     <div style={styles.wrapper}>
       <AnimatedBackground />
       <Hero />
+      <PersonalBrand />
       <Projects />
       <CTA />
     </div>
   );
 }
+
+/* ---------------- BACKGROUND ---------------- */
 
 function AnimatedBackground() {
   return (
@@ -31,10 +33,12 @@ function AnimatedBackground() {
   );
 }
 
+/* ---------------- HERO ---------------- */
+
 function Hero() {
   return (
     <section style={styles.hero}>
-      <h1 style={styles.title}>
+      <h1 style={styles.heroTitle}>
         We Build
         <span style={styles.gradientText}> Digital Power</span>
       </h1>
@@ -48,16 +52,16 @@ function Hero() {
   );
 }
 
+/* ---------------- PERSONAL BRAND ---------------- */
+
 function PersonalBrand() {
   return (
     <section style={styles.pbWrapper}>
       <div style={styles.pbContainer}>
-        <div style={styles.pbLeft}>
+        <div>
           <span style={styles.pbLabel}>CASE STUDY</span>
 
-          <h2 style={styles.pbTitle}>
-            Vamo Nene Digital Platform
-          </h2>
+          <h2 style={styles.pbTitle}>Vamo Nene Digital Platform</h2>
 
           <p style={styles.pbDescription}>
             We built the complete premium access portal, automation system,
@@ -65,26 +69,26 @@ function PersonalBrand() {
           </p>
 
           <div style={styles.pbMetrics}>
-            <div style={styles.metric}>
-              <h3>100–120</h3>
-              <p>New Users / Day</p>
+            <div style={styles.metricBox}>
+              <h3 style={styles.metricNumber}>100–120</h3>
+              <p style={styles.metricText}>New Users / Day</p>
             </div>
 
-            <div style={styles.metric}>
-              <h3>+212%</h3>
-              <p>Conversion Growth</p>
+            <div style={styles.metricBox}>
+              <h3 style={styles.metricNumber}>+212%</h3>
+              <p style={styles.metricText}>Conversion Growth</p>
             </div>
           </div>
         </div>
 
-        <div style={styles.pbRight}>
-          <div style={styles.phoneMockup}>
-            <div style={styles.screen}>
-              <div style={styles.fakeAppHeader}>Vamo Nene</div>
-              <div style={styles.fakeCard}>Premium Portal</div>
-              <div style={styles.fakeCard}>Exclusive Content</div>
-              <div style={styles.fakeCard}>Private Community</div>
-              <div style={styles.fakeCard}>Automated Access</div>
+        <div style={styles.phoneWrapper}>
+          <div style={styles.phone}>
+            <div style={styles.phoneScreen}>
+              <div style={styles.appHeader}>Vamo Nene</div>
+              <div style={styles.appCard}>Premium Portal</div>
+              <div style={styles.appCard}>Exclusive Content</div>
+              <div style={styles.appCard}>Private Community</div>
+              <div style={styles.appCard}>Automated Access</div>
             </div>
           </div>
         </div>
@@ -92,14 +96,17 @@ function PersonalBrand() {
     </section>
   );
 }
+
+/* ---------------- PROJECTS ---------------- */
+
 function Projects() {
   return (
     <section style={styles.gridSection}>
       <div style={styles.grid}>
         {projects.map((p, i) => (
-          <div key={i} style={styles.card} className="card">
+          <div key={i} style={styles.card}>
             <div style={styles.cardGlow} />
-            <span style={styles.tag}>{p.tag}</span>
+            <span style={styles.cardTag}>{p.tag}</span>
             <h3 style={styles.cardTitle}>{p.title}</h3>
             <div style={styles.stat}>{p.stat}</div>
           </div>
@@ -109,27 +116,25 @@ function Projects() {
   );
 }
 
+/* ---------------- CTA ---------------- */
+
 function CTA() {
   return (
-    <>
-      <section id="contact" style={styles.ctaSection}>
-        <h2 style={{ fontSize: 42, marginBottom: 20 }}>
-          Let’s Build Something Massive.
-        </h2>
+    <section id="contact" style={styles.ctaSection}>
+      <h2 style={styles.ctaTitle}>Let’s Build Something Massive.</h2>
 
-        <div style={{ maxWidth: 600, margin: "40px auto" }}>
-          <LeadForm source="landing" />
-        </div>
+      <div style={{ maxWidth: 600, margin: "40px auto" }}>
+        <LeadForm source="landing" />
+      </div>
 
-        <div style={{ marginTop: 40 }}>
-          <a href="mailto:juan.oddone@jmfullstack.lat" style={styles.cta}>
-            email us
-          </a>
-        </div>
-      </section>
-    </>
+      <a href="mailto:juan.oddone@jmfullstack.lat" style={styles.cta}>
+        email us
+      </a>
+    </section>
   );
 }
+
+/* ---------------- STYLES ---------------- */
 
 const styles = {
   wrapper: {
@@ -137,15 +142,14 @@ const styles = {
     background: "#0b0b12",
     color: "white",
     fontFamily: "Inter, sans-serif",
-    overflow: "hidden",
     position: "relative",
+    overflowX: "hidden",
   },
 
   bgWrapper: {
     position: "fixed",
     inset: 0,
     zIndex: 0,
-    overflow: "hidden",
   },
 
   gradientOrb1: {
@@ -156,7 +160,6 @@ const styles = {
     filter: "blur(120px)",
     top: "-100px",
     left: "-100px",
-    animation: "float1 12s infinite alternate ease-in-out",
   },
 
   gradientOrb2: {
@@ -167,7 +170,6 @@ const styles = {
     filter: "blur(120px)",
     bottom: "-100px",
     right: "-100px",
-    animation: "float2 15s infinite alternate ease-in-out",
   },
 
   hero: {
@@ -177,11 +179,11 @@ const styles = {
     zIndex: 1,
   },
 
- title: {
-  fontSize: "clamp(36px, 8vw, 72px)",
-  lineHeight: 1.1,
-  fontWeight: 800,
-},
+  heroTitle: {
+    fontSize: "clamp(36px, 8vw, 72px)",
+    fontWeight: 800,
+    lineHeight: 1.1,
+  },
 
   gradientText: {
     background: "linear-gradient(90deg, #6c5ce7, #00d2ff)",
@@ -189,61 +191,146 @@ const styles = {
     color: "transparent",
   },
 
-subtitle: {
-  fontSize: "clamp(16px, 3vw, 22px)",
-  opacity: 0.8,
-  marginTop: 20,
-  marginBottom: 40,
-  padding: "0 10px",
-},
+  subtitle: {
+    fontSize: "clamp(16px, 3vw, 22px)",
+    opacity: 0.8,
+    marginTop: 20,
+    marginBottom: 40,
+  },
 
   cta: {
+    display: "inline-block",
+    marginTop: 20,
     background: "linear-gradient(90deg, #6c5ce7, #00d2ff)",
     padding: "14px 32px",
     borderRadius: 12,
     color: "white",
     textDecoration: "none",
     fontWeight: 600,
-    boxShadow: "0 10px 30px rgba(0,0,0,0.4)",
   },
 
-  gridSection: {
-    padding: "80px 20px",
-    maxWidth: 1200,
-    margin: "0 auto",
+  pbWrapper: {
+    padding: "160px 20px",
+    background: "#06070f",
     position: "relative",
     zIndex: 1,
   },
 
- grid: {
-  display: "grid",
-  gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))",
-  gap: 24,
-},
+  pbContainer: {
+    maxWidth: 1200,
+    margin: "0 auto",
+    display: "grid",
+    gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))",
+    gap: 60,
+    alignItems: "center",
+  },
+
+  pbLabel: {
+    fontSize: 12,
+    letterSpacing: 2,
+    opacity: 0.5,
+  },
+
+  pbTitle: {
+    fontSize: "clamp(28px, 4vw, 48px)",
+    margin: "20px 0",
+  },
+
+  pbDescription: {
+    fontSize: 18,
+    opacity: 0.7,
+    marginBottom: 40,
+  },
+
+  pbMetrics: {
+    display: "flex",
+    gap: 30,
+    flexWrap: "wrap",
+  },
+
+  metricBox: {
+    background: "rgba(255,255,255,0.05)",
+    padding: "20px 30px",
+    borderRadius: 16,
+  },
+
+  metricNumber: {
+    fontSize: 28,
+    fontWeight: 700,
+  },
+
+  metricText: {
+    opacity: 0.6,
+  },
+
+  phoneWrapper: {
+    display: "flex",
+    justifyContent: "center",
+  },
+
+  phone: {
+    width: 300,
+    height: 600,
+    borderRadius: 40,
+    padding: 12,
+    background: "#111",
+    boxShadow: "0 30px 80px rgba(0,0,0,0.6)",
+  },
+
+  phoneScreen: {
+    width: "100%",
+    height: "100%",
+    borderRadius: 30,
+    background: "#0f172a",
+    padding: 20,
+    display: "flex",
+    flexDirection: "column",
+    gap: 20,
+  },
+
+  appHeader: {
+    fontWeight: 700,
+  },
+
+  appCard: {
+    padding: 15,
+    borderRadius: 16,
+    background: "rgba(255,255,255,0.08)",
+  },
+
+  gridSection: {
+    padding: "100px 20px",
+    position: "relative",
+    zIndex: 1,
+  },
+
+  grid: {
+    maxWidth: 1200,
+    margin: "0 auto",
+    display: "grid",
+    gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))",
+    gap: 24,
+  },
 
   card: {
     position: "relative",
-    padding: "clamp(100px, 15vw, 180px) 20px 80px",
+    padding: "120px 20px 60px",
     borderRadius: 20,
     background: "rgba(255,255,255,0.05)",
     backdropFilter: "blur(20px)",
-    border: "1px solid rgba(255,255,255,0.1)",
-    transition: "all 0.4s ease",
-    overflow: "hidden",
-    
   },
 
   cardGlow: {
     position: "absolute",
     width: 200,
     height: 200,
-    background: "radial-gradient(circle, rgba(108,92,231,0.5), transparent 70%)",
+    background: "radial-gradient(circle, rgba(108,92,231,0.4), transparent 70%)",
     top: -50,
     right: -50,
     filter: "blur(60px)",
   },
 
-  tag: {
+  cardTag: {
     fontSize: 12,
     opacity: 0.6,
   },
@@ -266,189 +353,8 @@ subtitle: {
     position: "relative",
     zIndex: 1,
   },
-  section: {
-  padding: "140px 32px",
-},
 
-container: {
-  maxWidth: 1300,
-  margin: "0 auto",
-  display: "grid",
-  gridTemplateColumns: "1fr 1fr",
-  gap: 80,
-  alignItems: "center",
-},
-
-left: {
-  display: "flex",
-  flexDirection: "column",
-},
-
-tag: {
-  fontSize: 12,
-  letterSpacing: 2,
-  opacity: 0.5,
-  marginBottom: 20,
-},
-
-title: {
-  fontSize: 42,
-  lineHeight: 1.2,
-  marginBottom: 24,
-},
-
-text: {
-  fontSize: 18,
-  opacity: 0.7,
-  marginBottom: 40,
-},
-
-metrics: {
-  display: "flex",
-  gap: 20,
-},
-
-metricCard: {
-  padding: "20px 30px",
-  borderRadius: 20,
-  background: "rgba(255,255,255,0.05)",
-  backdropFilter: "blur(10px)",
-  border: "1px solid rgba(255,255,255,0.08)",
-},
-
-metricNumber: {
-  fontSize: 28,
-  fontWeight: 700,
-  background: "linear-gradient(90deg,#6C63FF,#00D4FF)",
-  WebkitBackgroundClip: "text",
-  WebkitTextFillColor: "transparent",
-},
-
-metricLabel: {
-  fontSize: 14,
-  opacity: 0.6,
-},
-
-right: {
-  display: "flex",
-  justifyContent: "center",
-},
-
-phone: {
-  width: 300,
-  height: 600,
-  borderRadius: 40,
-  padding: 12,
-  background: "linear-gradient(145deg,#111,#000)",
-  boxShadow: "0 30px 80px rgba(0,0,0,0.6)",
-  position: "relative",
-},
-
-phoneScreen: {
-  width: "100%",
-  height: "100%",
-  borderRadius: 30,
-  background: "linear-gradient(180deg,#0f172a,#020617)",
-  padding: 20,
-  display: "flex",
-  flexDirection: "column",
-  gap: 20,
-},
-
-appHeader: {
-  fontWeight: 700,
-  fontSize: 18,
-  marginBottom: 20,
-},
-
-appCard: {
-  padding: 20,
-  borderRadius: 20,
-  background: "rgba(255,255,255,0.06)",
-  border: "1px solid rgba(255,255,255,0.08)",
-  fontSize: 14,
-}
-  pbWrapper: {
-  background: "#06070f",
-  padding: "180px 40px",
-  minHeight: "100vh",
-  borderTop: "1px solid rgba(255,255,255,0.05)",
-},
-
-pbContainer: {
-  maxWidth: 1300,
-  margin: "0 auto",
-  display: "grid",
-  gridTemplateColumns: "1fr 1fr",
-  gap: 80,
-  alignItems: "center",
-},
-
-pbLeft: {
-  color: "white",
-},
-
-pbLabel: {
-  fontSize: 12,
-  letterSpacing: 2,
-  opacity: 0.5,
-},
-
-pbTitle: {
-  fontSize: 48,
-  margin: "20px 0",
-},
-
-pbDescription: {
-  fontSize: 18,
-  opacity: 0.7,
-  marginBottom: 40,
-},
-
-pbMetrics: {
-  display: "flex",
-  gap: 40,
-},
-
-metric: {
-  background: "rgba(255,255,255,0.05)",
-  padding: "20px 30px",
-  borderRadius: 16,
-  border: "1px solid rgba(255,255,255,0.08)",
-},
-
-pbRight: {
-  display: "flex",
-  justifyContent: "center",
-},
-
-phoneMockup: {
-  width: 320,
-  height: 640,
-  background: "#111",
-  borderRadius: 40,
-  padding: 15,
-  boxShadow: "0 40px 100px rgba(0,0,0,0.9)",
-},
-
-screen: {
-  background: "#0f172a",
-  borderRadius: 30,
-  height: "100%",
-  padding: 25,
-  display: "flex",
-  flexDirection: "column",
-  gap: 20,
-},
-
-fakeAppHeader: {
-  fontWeight: 700,
-  marginBottom: 20,
-},
-
-fakeCard: {
-  background: "rgba(255,255,255,0.08)",
-  padding: 15,
-  borderRadius: 16,
-}
+  ctaTitle: {
+    fontSize: "clamp(28px, 5vw, 42px)",
+  },
 };
