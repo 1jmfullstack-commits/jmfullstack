@@ -1,224 +1,213 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
 
-const content = {
-  en: {
-    heroTitle: "A Lean Digital Product Studio.",
-    heroSubtitle:
-      "We build high-performance websites, mobile apps, and AI-powered automations for startups and businesses worldwide.",
-    cta: "Get a quote in 24h",
-    servicesTitle: "What We Do",
-    services: [
-      {
-        title: "Web Development",
-        desc: "Landing pages, corporate sites, dashboards, and e-commerce built for speed and conversion.",
-      },
-      {
-        title: "Mobile Apps",
-        desc: "Cross-platform mobile apps using modern frameworks with native performance.",
-      },
-      {
-        title: "Automation & AI",
-        desc: "Bots, workflows, and AI integrations that reduce manual work and increase revenue.",
-      },
-    ],
-    contactTitle: "Let’s Build Something Great.",
-    contactSubtitle: "Tell us about your project. We reply fast.",
-    footer: "© " + new Date().getFullYear() + " JM Fullstack Studio",
-  },
-  es: {
-    heroTitle: "Un Estudio Digital Ágil.",
-    heroSubtitle:
-      "Creamos sitios web, apps mobile y automatizaciones con IA para startups y empresas en todo el mundo.",
-    cta: "Cotización en 24h",
-    servicesTitle: "Qué Hacemos",
-    services: [
-      {
-        title: "Desarrollo Web",
-        desc: "Landings, sitios corporativos, dashboards y e-commerce pensados para conversión y velocidad.",
-      },
-      {
-        title: "Apps Mobile",
-        desc: "Aplicaciones cross-platform con performance nativa y arquitectura moderna.",
-      },
-      {
-        title: "Automatización & IA",
-        desc: "Bots, flujos e integraciones que reducen trabajo manual y aumentan ingresos.",
-      },
-    ],
-    contactTitle: "Construyamos Algo Grande.",
-    contactSubtitle: "Contanos tu idea. Respondemos rápido.",
-    footer: "© " + new Date().getFullYear() + " JM Fullstack Studio",
-  },
-};
+const projects = [
+  { title: "Personal Brand Funnel", tag: "Creator", stat: "+212% CVR" },
+  { title: "Luxury Real Estate Platform", tag: "Real Estate", stat: "+34% Leads" },
+  { title: "AI Booking Assistant", tag: "Automation", stat: "-60% Manual Work" },
+  { title: "Operations Dashboard", tag: "Internal Tool", stat: "Live KPIs" },
+  { title: "Mobile App Launch", tag: "Startup", stat: "Featured App" },
+];
 
 export default function Home() {
-  const [lang, setLang] = useState("en");
-
-  useEffect(() => {
-    const browserLang = navigator.language.startsWith("es") ? "es" : "en";
-    setLang(browserLang);
-  }, []);
-
-  const t = content[lang];
-
   return (
-    <div
-      style={{
-        background: "#0f0f14",
-        color: "white",
-        fontFamily: "Arial, sans-serif",
-      }}
-    >
-      {/* NAV */}
-      <nav
-        style={{
-          display: "flex",
-          justifyContent: "space-between",
-          padding: "20px 40px",
-          borderBottom: "1px solid rgba(255,255,255,0.08)",
-        }}
-      >
-        <strong>JM Fullstack Studio</strong>
-        <div>
-          <button
-            onClick={() => setLang("en")}
-            style={{
-              marginRight: 10,
-              background: lang === "en" ? "white" : "transparent",
-              color: lang === "en" ? "black" : "white",
-              border: "1px solid white",
-              padding: "5px 10px",
-              cursor: "pointer",
-            }}
-          >
-            EN
-          </button>
-          <button
-            onClick={() => setLang("es")}
-            style={{
-              background: lang === "es" ? "white" : "transparent",
-              color: lang === "es" ? "black" : "white",
-              border: "1px solid white",
-              padding: "5px 10px",
-              cursor: "pointer",
-            }}
-          >
-            ES
-          </button>
-        </div>
-      </nav>
-
-      {/* HERO */}
-      <section
-        style={{
-          padding: "120px 20px",
-          textAlign: "center",
-          maxWidth: 900,
-          margin: "0 auto",
-        }}
-      >
-        <h1 style={{ fontSize: "48px", marginBottom: 20 }}>
-          {t.heroTitle}
-        </h1>
-        <p
-          style={{
-            fontSize: "20px",
-            opacity: 0.8,
-            marginBottom: 40,
-          }}
-        >
-          {t.heroSubtitle}
-        </p>
-        <a
-          href="mailto:hola@jmfullstack.lat"
-          style={{
-            background: "white",
-            color: "black",
-            padding: "15px 30px",
-            borderRadius: 8,
-            textDecoration: "none",
-            fontWeight: "bold",
-          }}
-        >
-          {t.cta}
-        </a>
-      </section>
-
-      {/* SERVICES */}
-      <section
-        style={{
-          padding: "80px 20px",
-          background: "#15151c",
-        }}
-      >
-        <div style={{ maxWidth: 1000, margin: "0 auto" }}>
-          <h2 style={{ textAlign: "center", marginBottom: 50 }}>
-            {t.servicesTitle}
-          </h2>
-
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "repeat(auto-fit, minmax(250px, 1fr))",
-              gap: 30,
-            }}
-          >
-            {t.services.map((s, i) => (
-              <div
-                key={i}
-                style={{
-                  background: "#1e1e28",
-                  padding: 30,
-                  borderRadius: 12,
-                }}
-              >
-                <h3>{s.title}</h3>
-                <p style={{ opacity: 0.8 }}>{s.desc}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* CONTACT */}
-      <section
-        style={{
-          padding: "100px 20px",
-          textAlign: "center",
-        }}
-      >
-        <h2>{t.contactTitle}</h2>
-        <p style={{ opacity: 0.8, marginBottom: 30 }}>
-          {t.contactSubtitle}
-        </p>
-        <a
-          href="mailto:hola@jmfullstack.lat"
-          style={{
-            background: "white",
-            color: "black",
-            padding: "15px 30px",
-            borderRadius: 8,
-            textDecoration: "none",
-            fontWeight: "bold",
-          }}
-        >
-          hola@jmfullstack.lat
-        </a>
-      </section>
-
-      {/* FOOTER */}
-      <footer
-        style={{
-          padding: 30,
-          textAlign: "center",
-          borderTop: "1px solid rgba(255,255,255,0.08)",
-          opacity: 0.6,
-        }}
-      >
-        {t.footer}
-      </footer>
+    <div style={styles.wrapper}>
+      <AnimatedBackground />
+      <Hero />
+      <Projects />
+      <CTA />
     </div>
   );
 }
+
+function AnimatedBackground() {
+  return (
+    <div style={styles.bgWrapper}>
+      <div style={styles.gradientOrb1} />
+      <div style={styles.gradientOrb2} />
+    </div>
+  );
+}
+
+function Hero() {
+  return (
+    <section style={styles.hero}>
+      <h1 style={styles.title}>
+        We Build
+        <span style={styles.gradientText}> Digital Power</span>
+      </h1>
+      <p style={styles.subtitle}>
+        High-performance web, mobile & AI systems for brands that want to scale.
+      </p>
+      <a href="#contact" style={styles.cta}>
+        Start a Project →
+      </a>
+    </section>
+  );
+}
+
+function Projects() {
+  return (
+    <section style={styles.gridSection}>
+      <div style={styles.grid}>
+        {projects.map((p, i) => (
+          <div key={i} style={styles.card} className="card">
+            <div style={styles.cardGlow} />
+            <span style={styles.tag}>{p.tag}</span>
+            <h3 style={styles.cardTitle}>{p.title}</h3>
+            <div style={styles.stat}>{p.stat}</div>
+          </div>
+        ))}
+      </div>
+    </section>
+  );
+}
+
+function CTA() {
+  return (
+    <section id="contact" style={styles.ctaSection}>
+      <h2 style={{ fontSize: 42, marginBottom: 20 }}>
+        Let’s Build Something Massive.
+      </h2>
+      <a href="mailto:hola@jmfullstack.lat" style={styles.cta}>
+        hola@jmfullstack.lat
+      </a>
+    </section>
+  );
+}
+
+const styles = {
+  wrapper: {
+    minHeight: "100vh",
+    background: "#0b0b12",
+    color: "white",
+    fontFamily: "Inter, sans-serif",
+    overflow: "hidden",
+    position: "relative",
+  },
+
+  bgWrapper: {
+    position: "fixed",
+    inset: 0,
+    zIndex: 0,
+    overflow: "hidden",
+  },
+
+  gradientOrb1: {
+    position: "absolute",
+    width: 600,
+    height: 600,
+    background: "radial-gradient(circle, #6c5ce7, transparent 70%)",
+    filter: "blur(120px)",
+    top: "-100px",
+    left: "-100px",
+    animation: "float1 12s infinite alternate ease-in-out",
+  },
+
+  gradientOrb2: {
+    position: "absolute",
+    width: 500,
+    height: 500,
+    background: "radial-gradient(circle, #00d2ff, transparent 70%)",
+    filter: "blur(120px)",
+    bottom: "-100px",
+    right: "-100px",
+    animation: "float2 15s infinite alternate ease-in-out",
+  },
+
+  hero: {
+    padding: "180px 20px 100px",
+    textAlign: "center",
+    position: "relative",
+    zIndex: 1,
+  },
+
+  title: {
+    fontSize: "72px",
+    lineHeight: 1.1,
+    fontWeight: 800,
+  },
+
+  gradientText: {
+    background: "linear-gradient(90deg, #6c5ce7, #00d2ff)",
+    WebkitBackgroundClip: "text",
+    color: "transparent",
+  },
+
+  subtitle: {
+    fontSize: 22,
+    opacity: 0.8,
+    marginTop: 20,
+    marginBottom: 40,
+  },
+
+  cta: {
+    background: "linear-gradient(90deg, #6c5ce7, #00d2ff)",
+    padding: "14px 32px",
+    borderRadius: 12,
+    color: "white",
+    textDecoration: "none",
+    fontWeight: 600,
+    boxShadow: "0 10px 30px rgba(0,0,0,0.4)",
+  },
+
+  gridSection: {
+    padding: "80px 20px",
+    maxWidth: 1200,
+    margin: "0 auto",
+    position: "relative",
+    zIndex: 1,
+  },
+
+  grid: {
+    display: "grid",
+    gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))",
+    gap: 30,
+  },
+
+  card: {
+    position: "relative",
+    padding: 40,
+    borderRadius: 20,
+    background: "rgba(255,255,255,0.05)",
+    backdropFilter: "blur(20px)",
+    border: "1px solid rgba(255,255,255,0.1)",
+    transition: "all 0.4s ease",
+    overflow: "hidden",
+  },
+
+  cardGlow: {
+    position: "absolute",
+    width: 200,
+    height: 200,
+    background: "radial-gradient(circle, rgba(108,92,231,0.5), transparent 70%)",
+    top: -50,
+    right: -50,
+    filter: "blur(60px)",
+  },
+
+  tag: {
+    fontSize: 12,
+    opacity: 0.6,
+  },
+
+  cardTitle: {
+    fontSize: 22,
+    marginTop: 10,
+  },
+
+  stat: {
+    marginTop: 20,
+    fontWeight: 600,
+    fontSize: 14,
+    opacity: 0.8,
+  },
+
+  ctaSection: {
+    padding: "120px 20px",
+    textAlign: "center",
+    position: "relative",
+    zIndex: 1,
+  },
+};
