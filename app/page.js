@@ -78,8 +78,8 @@ function CTA() {
         </div>
 
         <div style={{ marginTop: 40 }}>
-          <a href="mailto:hola@jmfullstack.lat" style={styles.cta}>
-            hola@jmfullstack.lat
+          <a href="mailto:juan.oddone@jmfullstack.lat" style={styles.cta}>
+            email us
           </a>
         </div>
       </section>
