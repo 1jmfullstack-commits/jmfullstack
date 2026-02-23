@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import LeadForm from "./components/LeadForm";
 
 const projects = [
   { title: "Personal Brand Funnel", tag: "Creator", stat: "+212% CVR" },
@@ -66,6 +67,7 @@ function Projects() {
 
 function CTA() {
   return (
+    <LeadForm source="landing" />
     <section id="contact" style={styles.ctaSection}>
       <h2 style={{ fontSize: 42, marginBottom: 20 }}>
         Let’s Build Something Massive.
