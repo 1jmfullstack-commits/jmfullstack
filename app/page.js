@@ -50,49 +50,44 @@ function Hero() {
 
 function PersonalBrand() {
   return (
-    <section style={styles.pbSection}>
+    <section style={styles.pbWrapper}>
       <div style={styles.pbContainer}>
-
         <div style={styles.pbLeft}>
-          <div style={styles.pbTag}>PERSONAL BRAND CASE STUDY</div>
+          <span style={styles.pbLabel}>CASE STUDY</span>
 
           <h2 style={styles.pbTitle}>
-            From Content Creator to Scalable Platform
+            Vamo Nene Digital Platform
           </h2>
 
-          <p style={styles.pbText}>
-            We designed and developed the full digital ecosystem for
-            <strong> vamonene.com</strong> — including growth automation,
-            premium access architecture and high-conversion UX.
+          <p style={styles.pbDescription}>
+            We built the complete premium access portal, automation system,
+            and high-conversion onboarding architecture for vamonene.com.
           </p>
 
-          <div style={styles.pbStats}>
-            <div style={styles.pbStatBox}>
-              <div style={styles.pbStatNumber}>100–120</div>
-              <div style={styles.pbStatLabel}>New Users Daily</div>
+          <div style={styles.pbMetrics}>
+            <div style={styles.metric}>
+              <h3>100–120</h3>
+              <p>New Users / Day</p>
             </div>
 
-            <div style={styles.pbStatBox}>
-              <div style={styles.pbStatNumber}>+212%</div>
-              <div style={styles.pbStatLabel}>Conversion Growth</div>
+            <div style={styles.metric}>
+              <h3>+212%</h3>
+              <p>Conversion Growth</p>
             </div>
           </div>
         </div>
 
         <div style={styles.pbRight}>
-          <div style={styles.glow}></div>
-
-          <div style={styles.phone}>
-            <div style={styles.phoneScreen}>
-              <div style={styles.appHeader}>Vamo Nene</div>
-              <div style={styles.appCard}>Premium Portal Access</div>
-              <div style={styles.appCard}>Exclusive Content</div>
-              <div style={styles.appCard}>Community System</div>
-              <div style={styles.appCard}>Automated Onboarding</div>
+          <div style={styles.phoneMockup}>
+            <div style={styles.screen}>
+              <div style={styles.fakeAppHeader}>Vamo Nene</div>
+              <div style={styles.fakeCard}>Premium Portal</div>
+              <div style={styles.fakeCard}>Exclusive Content</div>
+              <div style={styles.fakeCard}>Private Community</div>
+              <div style={styles.fakeCard}>Automated Access</div>
             </div>
           </div>
         </div>
-
       </div>
     </section>
   );
@@ -372,5 +367,88 @@ appCard: {
   background: "rgba(255,255,255,0.06)",
   border: "1px solid rgba(255,255,255,0.08)",
   fontSize: 14,
+}
+  pbWrapper: {
+  background: "#06070f",
+  padding: "180px 40px",
+  minHeight: "100vh",
+  borderTop: "1px solid rgba(255,255,255,0.05)",
+},
+
+pbContainer: {
+  maxWidth: 1300,
+  margin: "0 auto",
+  display: "grid",
+  gridTemplateColumns: "1fr 1fr",
+  gap: 80,
+  alignItems: "center",
+},
+
+pbLeft: {
+  color: "white",
+},
+
+pbLabel: {
+  fontSize: 12,
+  letterSpacing: 2,
+  opacity: 0.5,
+},
+
+pbTitle: {
+  fontSize: 48,
+  margin: "20px 0",
+},
+
+pbDescription: {
+  fontSize: 18,
+  opacity: 0.7,
+  marginBottom: 40,
+},
+
+pbMetrics: {
+  display: "flex",
+  gap: 40,
+},
+
+metric: {
+  background: "rgba(255,255,255,0.05)",
+  padding: "20px 30px",
+  borderRadius: 16,
+  border: "1px solid rgba(255,255,255,0.08)",
+},
+
+pbRight: {
+  display: "flex",
+  justifyContent: "center",
+},
+
+phoneMockup: {
+  width: 320,
+  height: 640,
+  background: "#111",
+  borderRadius: 40,
+  padding: 15,
+  boxShadow: "0 40px 100px rgba(0,0,0,0.9)",
+},
+
+screen: {
+  background: "#0f172a",
+  borderRadius: 30,
+  height: "100%",
+  padding: 25,
+  display: "flex",
+  flexDirection: "column",
+  gap: 20,
+},
+
+fakeAppHeader: {
+  fontWeight: 700,
+  marginBottom: 20,
+},
+
+fakeCard: {
+  background: "rgba(255,255,255,0.08)",
+  padding: 15,
+  borderRadius: 16,
 }
 };
