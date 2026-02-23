@@ -123,11 +123,11 @@ const styles = {
     zIndex: 1,
   },
 
-  title: {
-    fontSize: "72px",
-    lineHeight: 1.1,
-    fontWeight: 800,
-  },
+ title: {
+  fontSize: "clamp(36px, 8vw, 72px)",
+  lineHeight: 1.1,
+  fontWeight: 800,
+},
 
   gradientText: {
     background: "linear-gradient(90deg, #6c5ce7, #00d2ff)",
@@ -135,12 +135,13 @@ const styles = {
     color: "transparent",
   },
 
-  subtitle: {
-    fontSize: 22,
-    opacity: 0.8,
-    marginTop: 20,
-    marginBottom: 40,
-  },
+subtitle: {
+  fontSize: "clamp(16px, 3vw, 22px)",
+  opacity: 0.8,
+  marginTop: 20,
+  marginBottom: 40,
+  padding: "0 10px",
+},
 
   cta: {
     background: "linear-gradient(90deg, #6c5ce7, #00d2ff)",
@@ -160,21 +161,22 @@ const styles = {
     zIndex: 1,
   },
 
-  grid: {
-    display: "grid",
-    gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))",
-    gap: 30,
-  },
+ grid: {
+  display: "grid",
+  gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))",
+  gap: 24,
+},
 
   card: {
     position: "relative",
-    padding: 40,
+    padding: "clamp(100px, 15vw, 180px) 20px 80px",
     borderRadius: 20,
     background: "rgba(255,255,255,0.05)",
     backdropFilter: "blur(20px)",
     border: "1px solid rgba(255,255,255,0.1)",
     transition: "all 0.4s ease",
     overflow: "hidden",
+    
   },
 
   cardGlow: {
