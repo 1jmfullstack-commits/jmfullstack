@@ -6,7 +6,7 @@ import { Hero } from "@/components/hero"
 import { Services } from "@/components/services"
 import { Process } from "@/components/process"
 import { About } from "@/components/about"
-import { CTA } from "@/components/cta"
+import CTA from "@/components/cta"
 import { Footer } from "@/components/footer"
 
 export default function Home() {
