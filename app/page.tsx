@@ -8,6 +8,7 @@ import { Process } from "@/components/process"
 import { About } from "@/components/about"
 import CTA from "@/components/cta"
 import { Footer } from "@/components/footer"
+import ChatbotWidget from "@/components/chatbot-widget"
 
 export default function Home() {
   return (
