@@ -22,31 +22,35 @@ export function CTA() {
               {t("ctaDescription")}
             </p>
 
+           
             {/* CTA Buttons */}
-            <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
-              <Button
-                asChild
-                size="lg"
-                className="bg-primary text-primary-foreground hover:bg-primary/90 text-base px-8 h-12 w-full sm:w-auto"
-              >
-                <a href="https://calendly.com" target="_blank" rel="noopener noreferrer">
-                  <Calendar className="mr-2 size-4" />
-                  {t("ctaCta1")}
-                  <ArrowRight className="ml-2 size-4" />
-                </a>
-              </Button>
-              <Button
-                asChild
-                variant="outline"
-                size="lg"
-                className="border-border text-foreground hover:bg-secondary hover:text-foreground text-base px-8 h-12 w-full sm:w-auto"
-              >
-                <a href="mailto:juan.oddone@fullstack.lat">
-                  <Mail className="mr-2 size-4" />
-                  {t("ctaCta2")}
-                </a>
-              </Button>
-            </div>
+<div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
+  <Button
+    size="lg"
+    onClick={() =>
+      window.Calendly?.initPopupWidget({
+        url: "https://calendly.com/1jmfullstack/30min",
+      })
+    }
+    className="bg-primary text-primary-foreground hover:bg-primary/90 text-base px-8 h-12 w-full sm:w-auto"
+  >
+    <Calendar className="mr-2 size-4" />
+    {t("ctaCta1")}
+    <ArrowRight className="ml-2 size-4" />
+  </Button>
+
+  <Button
+    asChild
+    variant="outline"
+    size="lg"
+    className="border-border text-foreground hover:bg-secondary hover:text-foreground text-base px-8 h-12 w-full sm:w-auto"
+  >
+    <a href="mailto:juan.oddone@fullstack.lat">
+      <Mail className="mr-2 size-4" />
+      {t("ctaCta2")}
+    </a>
+  </Button>
+</div>
 
             {/* Email direct link */}
             <p className="mt-6 text-sm text-muted-foreground">
