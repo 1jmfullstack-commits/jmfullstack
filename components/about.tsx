@@ -60,7 +60,7 @@ export function About() {
                   </p>
                   <p className="pl-4">
                     <span className="text-muted-foreground">{"qantity:"}</span>{" "}
-                    <span className="text-primary">{'"lots"'}</span>,
+                    <span className="text-primary">{'"a lot"'}</span>,
                   </p>
                   <p className="pl-4">
                     <span className="text-muted-foreground">{"brand:"}</span>{" "}
