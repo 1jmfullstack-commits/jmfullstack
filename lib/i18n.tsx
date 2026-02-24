@@ -14,19 +14,19 @@ const translations = {
     navCta: "Schedule a Call",
 
     // Hero
-    heroTag: "Fullstack Developer",
+    heroTag: "Fullstack Developers",
     heroTitle: "Your idea deserves to exist.",
-    heroTitleAccent: "I build it.",
+    heroTitleAccent: "We build it.",
     heroDescription:
-      "I help founders and businesses ship their MVP fast. Web, mobile, AI, bots, automation \u2014 whatever it takes to get you to market.",
+      "We help founders and businesses ship their MVP fast. Web, mobile, AI, bots, automation \u2014 whatever it takes to get you to market.",
     heroCta1: "Schedule a Call",
-    heroCta2: "Write Me",
+    heroCta2: "Write Us",
 
     // Services
-    servicesTag: "What I Do",
+    servicesTag: "What We Do",
     servicesTitle: "Everything you need to launch",
     servicesDescription:
-      "From idea to production-ready product. I cover every layer of the stack so you can focus on your business.",
+      "From idea to production-ready product. We will cover every layer of the stack so you can focus on your business.",
     serviceWeb: "Web Development",
     serviceWebDesc:
       "Full-stack web applications, landing pages, dashboards, and admin panels. React, Next.js, Node.js, and more.",
@@ -57,16 +57,16 @@ const translations = {
       "I define features, timeline, and cost. No surprises. You know exactly what you get and when.",
     processStep3: "Build Sprint",
     processStep3Desc:
-      "I build your MVP in focused sprints with weekly demos. You see progress every week.",
+      "We build your MVP in focused sprints with weekly demos. You see progress every week.",
     processStep4: "Launch & Handoff",
     processStep4Desc:
       "Deployment, documentation, and support. Your product is live and you own everything.",
 
     // About
-    aboutTag: "About Me",
-    aboutTitle: "I'm Juan, your tech partner",
+    aboutTag: "About Us",
+    aboutTitle: "We are JM Fullstack, your tech partner",
     aboutDescription:
-      "Fullstack developer with years of experience building products for startups and businesses across Latin America and beyond. I specialize in taking ideas from napkin to production. I've shipped dozens of MVPs, SaaS platforms, and automation systems. I work fast, communicate clearly, and deliver production-ready code.",
+      "Fullstack developers with years of experience building products for startups and businesses across Latin America and beyond. We specialize in taking ideas from napkin to production. We've shipped dozens of MVPs, SaaS platforms, and automation systems. We work fast, communicate clearly, and deliver production-ready code.",
     aboutStat1: "MVPs Shipped",
     aboutStat2: "Happy Clients",
     aboutStat3: "Technologies",
@@ -74,10 +74,10 @@ const translations = {
     // CTA
     ctaTitle: "Ready to build?",
     ctaDescription:
-      "Stop waiting. Let's get your MVP out the door. Book a free discovery call or send me a message.",
+      "Stop waiting. Let's get your MVP out the door. Book a free discovery call or send us a message.",
     ctaCta1: "Schedule a Call",
     ctaCta2: "Send an Email",
-    ctaOr: "or email me directly at",
+    ctaOr: "or email us directly at",
 
     // Footer
     footerTagline: "Building the future, one MVP at a time.",
@@ -97,34 +97,34 @@ const translations = {
     navCta: "Agendar Llamada",
 
     // Hero
-    heroTag: "Desarrollador Fullstack",
+    heroTag: "Desarrolladores Fullstack",
     heroTitle: "Tu idea merece existir.",
-    heroTitleAccent: "Yo la construyo.",
+    heroTitleAccent: "Nosotros la construímos.",
     heroDescription:
-      "Ayudo a founders y empresas a sacar su MVP rapido. Web, mobile, IA, bots, automatizaciones \u2014 lo que haga falta para llegar al mercado.",
+      "Ayudamos a founders y empresas a sacar su MVP rapido. Web, mobile, IA, bots, automatizaciones \u2014 lo que haga falta para llegar al mercado.",
     heroCta1: "Agendar Llamada",
-    heroCta2: "Escribime",
+    heroCta2: "Escribinos",
 
     // Services
-    servicesTag: "Que Hago",
+    servicesTag: "Que Hacemos",
     servicesTitle: "Todo lo que necesitas para lanzar",
     servicesDescription:
-      "De la idea al producto listo para produccion. Cubro cada capa del stack para que vos te enfoques en tu negocio.",
+      "De la idea al producto listo para produccion. Cubrimos cada capa del stack para que vos te enfoques en tu negocio.",
     serviceWeb: "Desarrollo Web",
     serviceWebDesc:
       "Aplicaciones web full-stack, landing pages, dashboards y paneles de admin. React, Next.js, Node.js y mas.",
-    serviceMobile: "Apps Moviles",
+    serviceMobile: "Apps Móviles",
     serviceMobileDesc:
-      "Aplicaciones moviles multiplataforma con experiencia nativa. React Native, Flutter, o lo que se adapte a tus necesidades.",
+      "Aplicaciones móviles multiplataforma con experiencia nativa. React Native, Flutter, o lo que se adapte a tus necesidades.",
     serviceAI: "IA & Machine Learning",
     serviceAIDesc:
-      "Chatbots, integraciones de IA, motores de recomendacion y automatizacion inteligente para tu producto.",
-    serviceBots: "Bots & Automatizacion",
+      "Chatbots, integraciones de IA, motores de recomendación y automatización inteligente para tu producto.",
+    serviceBots: "Bots & Automatización",
     serviceBotsDesc:
-      "Automatizacion de procesos, bots de Telegram/WhatsApp, scraping, integraciones con tus herramientas existentes.",
+      "Automatización de procesos, bots de Telegram/WhatsApp, scraping, integraciones con tus herramientas existentes.",
     serviceSaas: "Arquitectura SaaS",
     serviceSaasDesc:
-      "Sistemas multi-tenant, facturacion por suscripcion, gestion de usuarios e infraestructura escalable.",
+      "Sistemas multi-tenant, facturación por suscripcion, gestión de usuarios e infraestructura escalable.",
     serviceAPI: "APIs & Integraciones",
     serviceAPIDesc:
       "APIs RESTful y GraphQL, integraciones de terceros, pasarelas de pago y pipelines de datos.",
@@ -134,30 +134,30 @@ const translations = {
     processTitle: "De cero a MVP en semanas, no meses",
     processStep1: "Llamada de Descubrimiento",
     processStep1Desc:
-      "Hablamos de tu idea, tus usuarios y tus objetivos. Hago las preguntas dificiles para construir lo correcto.",
+      "Hablamos de tu idea, tus usuarios y tus objetivos. Hacemos las preguntas dificiles para construir lo correcto.",
     processStep2: "Alcance & Propuesta",
     processStep2Desc:
-      "Defino funcionalidades, timeline y costo. Sin sorpresas. Sabes exactamente que recibis y cuando.",
+      "Definimos funcionalidades, timeline y costo. Sin sorpresas. Sabes exactamente que recibís y cuando.",
     processStep3: "Sprint de Desarrollo",
     processStep3Desc:
       "Construyo tu MVP en sprints enfocados con demos semanales. Ves progreso cada semana.",
     processStep4: "Lanzamiento & Entrega",
     processStep4Desc:
-      "Deploy, documentacion y soporte. Tu producto esta vivo y vos sos dueno de todo.",
+      "Deploy, documentación y soporte. Tu producto esta vivo y vos sos dueño de todo.",
 
     // About
     aboutTag: "Sobre Mi",
-    aboutTitle: "Soy Juan, tu socio tecnologico",
+    aboutTitle: "Somos JM Fullstack, tu socio tecnologico",
     aboutDescription:
-      "Desarrollador fullstack con anios de experiencia construyendo productos para startups y empresas en Latinoamerica y el mundo. Me especializo en llevar ideas del papel a produccion. Llevo decenas de MVPs, plataformas SaaS y sistemas de automatizacion entregados. Trabajo rapido, comunico claro y entrego codigo listo para produccion.",
+      "Desarrolladores fullstack con años de experiencia construyendo productos para startups y empresas en Latinoamerica y el mundo. Nos especializamos en llevar ideas del papel a produccion. Llevamos decenas de MVPs, plataformas SaaS y sistemas de automatizacion entregados. Trabajo rápido, comunicación clara y entrega de codigo listo para producción.",
     aboutStat1: "MVPs Entregados",
     aboutStat2: "Clientes Felices",
-    aboutStat3: "Tecnologias",
+    aboutStat3: "Tecnologías",
 
     // CTA
     ctaTitle: "Listo para construir?",
     ctaDescription:
-      "Deja de esperar. Saquemos tu MVP a la calle. Agenda una llamada gratis o mandame un mensaje.",
+      "Deja de esperar. Saquemos tu MVP a la calle. Agenda una llamada gratis o mandanos un mensaje.",
     ctaCta1: "Agendar Llamada",
     ctaCta2: "Enviar Email",
     ctaOr: "o escribime directo a",
