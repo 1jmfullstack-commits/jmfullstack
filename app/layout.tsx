@@ -13,25 +13,7 @@ const spaceGrotesk = Space_Grotesk({
 export const metadata: Metadata = {
   title: "jmfullstack | MVP Development for Founders",
   description:
-    "Fullstack developer building MVPs for startups, SaaS founders, and businesses. Web, mobile, AI, bots, automation. Ship fast, scale later.",
-  generator: "v0.app",
-  icons: {
-    icon: [
-      {
-        url: "/icon-light-32x32.png",
-        media: "(prefers-color-scheme: light)",
-      },
-      {
-        url: "/icon-dark-32x32.png",
-        media: "(prefers-color-scheme: dark)",
-      },
-      {
-        url: "/icon.svg",
-        type: "image/svg+xml",
-      },
-    ],
-    apple: "/apple-icon.png",
-  },
+    "Fullstack developer building MVPs for startups, SaaS founders, and businesses.",
 }
 
 export const viewport: Viewport = {
@@ -50,7 +32,6 @@ export default function RootLayout({
       <body className="font-sans antialiased">
         {children}
 
-        {/* Calendly Script */}
         <Script
           src="https://assets.calendly.com/assets/external/widget.js"
           strategy="afterInteractive"
