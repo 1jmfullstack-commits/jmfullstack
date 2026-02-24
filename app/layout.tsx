@@ -39,7 +39,6 @@ export default function RootLayout({
         />
 
         <Analytics />
-        <ChatbotWidget />
       </body>
     </html>
   )
