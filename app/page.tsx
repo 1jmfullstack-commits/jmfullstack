@@ -22,5 +22,6 @@ export default function Home() {
       </main>
       <Footer />
     </I18nProvider>
+    <ChatbotWidget />
   )
 }
