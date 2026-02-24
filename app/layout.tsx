@@ -3,6 +3,7 @@ import { Inter, Space_Grotesk } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
 import Script from "next/script"
 import "./globals.css"
+import ChatbotWidget from "@/components/chatbot-widget";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" })
 const spaceGrotesk = Space_Grotesk({
@@ -38,6 +39,7 @@ export default function RootLayout({
         />
 
         <Analytics />
+        <ChatbotWidget />
       </body>
     </html>
   )
