@@ -55,12 +55,12 @@ export function About() {
                 <div className="space-y-2 text-muted-foreground">
                   <p>
                     <span className="text-primary">{"const"}</span>{" "}
-                    <span className="text-foreground">{"developer"}</span>
+                    <span className="text-foreground">{"developers"}</span>
                     {" = {"}
                   </p>
                   <p className="pl-4">
-                    <span className="text-muted-foreground">{"name:"}</span>{" "}
-                    <span className="text-primary">{'"Juan Oddone"'}</span>,
+                    <span className="text-muted-foreground">{"qantity:"}</span>{" "}
+                    <span className="text-primary">{'"lots"'}</span>,
                   </p>
                   <p className="pl-4">
                     <span className="text-muted-foreground">{"brand:"}</span>{" "}
