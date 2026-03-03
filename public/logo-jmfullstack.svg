@@ -1,0 +1,9 @@
+<svg width="320" height="60" viewBox="0 0 320 60" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .jm { fill: #ffffff; font-family: monospace; font-weight: 700; }
+    .full { fill: #22c55e; font-family: monospace; font-weight: 700; }
+  </style>
+  <text x="0" y="40" font-size="36">
+    <tspan class="jm">jm</tspan><tspan class="full">fullstack</tspan>
+  </text>
+</svg>
