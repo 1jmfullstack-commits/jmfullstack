@@ -88,16 +88,7 @@ const translations = {
     ctaCta2: "Restructure my product",
     ctaOr: "or email us at",
 
-    // Footer
-    footerTagline: "Product engineering for founders who execute.",
-    footerRights: "All rights reserved.",
-    footerServices: "Engagement",
-    footerCompany: "Studio",
-    footerAbout: "About",
-    footerProcess: "Process",
-    footerContact: "Contact",
-  },
-      // Diagnóstico
+    // Diagnóstico
     diagTag: "Audit",
     diagTitle: "Product Technical Audit",
     diagTitleAccent: "in 24h",
@@ -105,7 +96,7 @@ const translations = {
       "Actionable clarity on your MVP or current system: risks, architecture, next steps, and a realistic estimate.",
 
     diagPaidCta: "Express Audit — USD 150",
-    diagPaidUrl: "https://payoneer.com", // <- CAMBIAR por tu link real de cobro
+    diagPaidUrl: "https://payoneer.com",
     diagFreeCta: "Free Evaluation (48h)",
     diagFreeEmail: "juan.oddone@jmfullstack.lat",
     diagFreeSubject: "Free evaluation (48h) — Access to repo / product",
@@ -133,6 +124,16 @@ const translations = {
     diagAltTitle: "Want zero friction?",
     diagAltDesc:
       "Reply to the email with your repo + a short context. We’ll handle the rest.",
+
+    // Footer
+    footerTagline: "Product engineering for founders who execute.",
+    footerRights: "All rights reserved.",
+    footerServices: "Engagement",
+    footerCompany: "Studio",
+    footerAbout: "About",
+    footerProcess: "Process",
+    footerContact: "Contact",
+  },
 
   es: {
     // Nav
@@ -217,24 +218,15 @@ const translations = {
     ctaCta2: "Necesito reestructurar mi producto",
     ctaOr: "o escribinos a",
 
-    // Footer
-    footerTagline: "Ingeniería de producto para founders que ejecutan.",
-    footerRights: "Todos los derechos reservados.",
-    footerServices: "Modelo",
-    footerCompany: "Estudio",
-    footerAbout: "Sobre el Estudio",
-    footerProcess: "Proceso",
-    footerContact: "Contacto",
-  },
-      // Diagnóstico
-    
+    // Diagnóstico
+    diagTag: "Diagnóstico",
     diagTitle: "Diagnóstico Técnico",
     diagTitleAccent: "en 24h",
     diagSubtitle:
       "Claridad accionable sobre tu MVP o sistema actual: riesgos, arquitectura, próximos pasos y estimación realista.",
 
     diagPaidCta: "Diagnóstico Express — USD 150",
-    diagPaidUrl: "https://payoneer.com", // <- CAMBIAR por tu link real de cobro
+    diagPaidUrl: "https://payoneer.com",
     diagFreeCta: "Evaluación Gratis (48h)",
     diagFreeEmail: "juan.oddone@jmfullstack.lat",
     diagFreeSubject: "Evaluación gratis (48h) — Acceso a repo / producto",
@@ -262,6 +254,16 @@ const translations = {
     diagAltTitle: "¿Cero fricción?",
     diagAltDesc:
       "Respondé el mail con tu repo + un contexto corto. Nosotros nos encargamos del resto.",
+
+    // Footer
+    footerTagline: "Ingeniería de producto para founders que ejecutan.",
+    footerRights: "Todos los derechos reservados.",
+    footerServices: "Modelo",
+    footerCompany: "Estudio",
+    footerAbout: "Sobre el Estudio",
+    footerProcess: "Proceso",
+    footerContact: "Contacto",
+  },
 } as const
 
 type TranslationKey = string
@@ -278,11 +280,11 @@ export function I18nProvider({ children }: { children: ReactNode }) {
   const [locale, setLocale] = useState<Locale>("es")
 
   const t = useCallback(
-  (key: string): string => {
-    return (translations as any)[locale][key] || key
-  },
-  [locale]
-)
+    (key: string): string => {
+      return (translations as any)[locale][key] || key
+    },
+    [locale]
+  )
 
   const toggleLocale = useCallback(() => {
     setLocale((prev) => (prev === "en" ? "es" : "en"))
