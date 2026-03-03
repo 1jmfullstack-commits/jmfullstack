@@ -44,7 +44,7 @@ export function Hero() {
               size="lg"
               className="bg-primary text-primary-foreground hover:bg-primary/90 text-base px-8 h-12"
             >
-              <a href="#contact">
+              <a href="/diagnostico">
                 {t("heroCta1")}
                 <ArrowRight className="ml-2 size-4" />
               </a>
@@ -55,7 +55,7 @@ export function Hero() {
               size="lg"
               className="border-border text-foreground hover:bg-secondary hover:text-foreground text-base px-8 h-12"
             >
-              <a href="mailto:juan.oddone@fullstack.lat">
+              <a href="mailto:juan.oddone@jmfullstack.lat">
                 <Mail className="mr-2 size-4" />
                 {t("heroCta2")}
               </a>
