@@ -97,6 +97,42 @@ const translations = {
     footerProcess: "Process",
     footerContact: "Contact",
   },
+      // Diagnóstico
+    diagTag: "Audit",
+    diagTitle: "Product Technical Audit",
+    diagTitleAccent: "in 24h",
+    diagSubtitle:
+      "Actionable clarity on your MVP or current system: risks, architecture, next steps, and a realistic estimate.",
+
+    diagPaidCta: "Express Audit — USD 150",
+    diagPaidUrl: "https://payoneer.com", // <- CAMBIAR por tu link real de cobro
+    diagFreeCta: "Free Evaluation (48h)",
+    diagFreeEmail: "juan.oddone@jmfullstack.lat",
+    diagFreeSubject: "Free evaluation (48h) — Access to repo / product",
+    diagNote: "The audit is discounted if we move forward with development.",
+
+    diagBox1Title: "What you get",
+    diagInc1: "Review of idea, MVP or repository",
+    diagInc2: "Architecture + stack evaluation",
+    diagInc3: "Technical risks and bottlenecks",
+    diagInc4: "Prioritized improvements",
+    diagInc5: "Realistic time & cost estimate",
+    diagInc6: "15–20 min Loom video walkthrough",
+    diagInc7: "Suggested roadmap (short doc)",
+
+    diagBox2Title: "What it does NOT include",
+    diagExc1: "Implementation / development work",
+    diagExc2: "Ongoing support",
+    diagExc3: "Full UX redesign",
+    diagExc4: "Mandatory meetings",
+
+    diagGuaranteeTitle: "Guarantee",
+    diagGuaranteeDesc:
+      "If the audit doesn’t give you real and actionable clarity, we refund it.",
+
+    diagAltTitle: "Want zero friction?",
+    diagAltDesc:
+      "Reply to the email with your repo + a short context. We’ll handle the rest.",
 
   es: {
     // Nav
@@ -190,6 +226,42 @@ const translations = {
     footerProcess: "Proceso",
     footerContact: "Contacto",
   },
+      // Diagnóstico
+    diagTag: "Diagnóstico",
+    diagTitle: "Diagnóstico Técnico",
+    diagTitleAccent: "en 24h",
+    diagSubtitle:
+      "Claridad accionable sobre tu MVP o sistema actual: riesgos, arquitectura, próximos pasos y estimación realista.",
+
+    diagPaidCta: "Diagnóstico Express — USD 150",
+    diagPaidUrl: "https://payoneer.com", // <- CAMBIAR por tu link real de cobro
+    diagFreeCta: "Evaluación Gratis (48h)",
+    diagFreeEmail: "juan.oddone@jmfullstack.lat",
+    diagFreeSubject: "Evaluación gratis (48h) — Acceso a repo / producto",
+    diagNote: "El diagnóstico se descuenta si avanzamos con el desarrollo.",
+
+    diagBox1Title: "Qué recibís",
+    diagInc1: "Revisión de idea, MVP o repositorio",
+    diagInc2: "Evaluación de arquitectura + stack",
+    diagInc3: "Riesgos técnicos y cuellos de botella",
+    diagInc4: "Recomendaciones priorizadas",
+    diagInc5: "Estimación realista de tiempo y costo",
+    diagInc6: "Video Loom explicativo (15–20 min)",
+    diagInc7: "Roadmap sugerido (documento corto)",
+
+    diagBox2Title: "Qué NO incluye",
+    diagExc1: "Desarrollo o implementación",
+    diagExc2: "Soporte continuo",
+    diagExc3: "Rediseño UX completo",
+    diagExc4: "Reuniones obligatorias",
+
+    diagGuaranteeTitle: "Garantía",
+    diagGuaranteeDesc:
+      "Si el diagnóstico no te aporta claridad real y accionable, te devolvemos el dinero.",
+
+    diagAltTitle: "¿Cero fricción?",
+    diagAltDesc:
+      "Respondé el mail con tu repo + un contexto corto. Nosotros nos encargamos del resto.",
 } as const
 
 type TranslationKey = string
