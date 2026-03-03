@@ -4,6 +4,9 @@ import { Analytics } from "@vercel/analytics/next"
 import Script from "next/script"
 import "./globals.css"
 
+import { I18nProvider } from "@/lib/i18n"
+import { Header } from "@/components/header"
+
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" })
 const spaceGrotesk = Space_Grotesk({
   subsets: ["latin"],
@@ -30,7 +33,10 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${inter.variable} ${spaceGrotesk.variable}`}>
       <body className="font-sans antialiased">
-        {children}
+        <I18nProvider>
+          <Header />
+          {children}
+        </I18nProvider>
 
         <Script
           src="https://assets.calendly.com/assets/external/widget.js"
