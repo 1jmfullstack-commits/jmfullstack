@@ -5,6 +5,7 @@ import { useI18n } from "@/lib/i18n"
 import { Button } from "@/components/ui/button"
 import { Check, X } from "lucide-react"
 
+
 export default function DiagnosticoPage() {
   const { t } = useI18n()
 
