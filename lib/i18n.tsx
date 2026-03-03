@@ -227,7 +227,7 @@ const translations = {
     footerContact: "Contacto",
   },
       // Diagnóstico
-    diagTag: "Diagnóstico",
+    
     diagTitle: "Diagnóstico Técnico",
     diagTitleAccent: "en 24h",
     diagSubtitle:
