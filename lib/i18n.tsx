@@ -192,7 +192,7 @@ const translations = {
   },
 } as const
 
-type TranslationKey = keyof (typeof translations)["en"]
+type TranslationKey = string
 
 interface I18nContextType {
   locale: Locale
@@ -206,11 +206,11 @@ export function I18nProvider({ children }: { children: ReactNode }) {
   const [locale, setLocale] = useState<Locale>("es")
 
   const t = useCallback(
-    (key: TranslationKey): string => {
-      return translations[locale][key] || key
-    },
-    [locale]
-  )
+  (key: string): string => {
+    return (translations as any)[locale][key] || key
+  },
+  [locale]
+)
 
   const toggleLocale = useCallback(() => {
     setLocale((prev) => (prev === "en" ? "es" : "en"))
