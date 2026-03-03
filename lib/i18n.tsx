@@ -7,167 +7,186 @@ export type Locale = "en" | "es"
 const translations = {
   en: {
     // Nav
-    navServices: "Services",
+    navServices: "Engagement",
     navProcess: "Process",
-    navAbout: "About",
+    navAbout: "Studio",
     navContact: "Contact",
-    navCta: "Schedule a Call",
+    navCta: "Evaluate Project",
 
     // Hero
-    heroTag: "Fullstack Developers",
-    heroTitle: "Your idea deserves to exist.",
-    heroTitleAccent: "We build it.",
+    heroTag: "Product Engineering Studio",
+    heroTitle: "We build digital products.",
+    heroTitleAccent: "From MVP to scalable systems.",
     heroDescription:
-      "We help founders and businesses ship their MVP fast. Web, mobile, AI, bots, automation \u2014 whatever it takes to get you to market.",
-    heroCta1: "Schedule a Call",
-    heroCta2: "Write Us",
+      "We design and develop production-ready MVPs for founders and growing startups. Whether you are validating an idea or restructuring your product to scale, we focus on clean architecture and fast execution.",
+    heroCta1: "Evaluate my project",
+    heroCta2: "Send brief",
 
     // Services
-    servicesTag: "What We Do",
-    servicesTitle: "Everything you need to launch",
+    servicesTag: "Engagement Models",
+    servicesTitle: "Two clear paths depending on your stage",
     servicesDescription:
-      "From idea to production-ready product. We will cover every layer of the stack so you can focus on your business.",
-    serviceWeb: "Web Development",
+      "We don't sell random code. We build structured digital products ready to operate and grow.",
+
+    serviceWeb: "Stage A — MVP Launch",
     serviceWebDesc:
-      "Full-stack web applications, landing pages, dashboards, and admin panels. React, Next.js, Node.js, and more.",
-    serviceMobile: "Mobile Apps",
+      "30–45 day MVP built with core features, authentication, and clean deployment so you can validate with real users.",
+
+    serviceMobile: "Stage B — Rebuild to Scale",
     serviceMobileDesc:
-      "Cross-platform mobile applications that feel native. React Native, Flutter, or whatever fits your needs.",
-    serviceAI: "AI & Machine Learning",
+      "If your current system is unstable or messy, we restructure backend, database and architecture for serious growth.",
+
+    serviceAI: "Solid SaaS Architecture",
     serviceAIDesc:
-      "Chatbots, AI integrations, recommendation engines, and intelligent automation for your product.",
-    serviceBots: "Bots & Automation",
+      "Multi-tenant systems, proper role management, scalable backend structure and production-ready standards.",
+
+    serviceBots: "Integrations & Payments",
     serviceBotsDesc:
-      "Process automation, Telegram/WhatsApp bots, scraping, integrations with your existing tools.",
-    serviceSaas: "SaaS Architecture",
+      "Stripe, third-party APIs, automation flows and structured integrations done properly.",
+
+    serviceSaas: "Professional Deployment",
     serviceSaasDesc:
-      "Multi-tenant systems, subscription billing, user management, and scalable infrastructure.",
-    serviceAPI: "APIs & Integrations",
+      "Infrastructure setup, production environments and technical configuration prepared for growth.",
+
+    serviceAPI: "Documentation & Handoff",
     serviceAPIDesc:
-      "RESTful and GraphQL APIs, third-party integrations, payment gateways, and data pipelines.",
+      "Clean codebase, repository ownership transfer, system access and basic documentation included.",
 
     // Process
-    processTag: "How It Works",
-    processTitle: "From zero to MVP in weeks, not months",
-    processStep1: "Discovery Call",
+    processTag: "Execution Framework",
+    processTitle: "Clear process. Concrete deliverables.",
+    processStep1: "Strategic Diagnosis",
     processStep1Desc:
-      "We talk about your idea, your users, and your goals. I ask the hard questions so we build the right thing.",
-    processStep2: "Scope & Proposal",
+      "We analyze your stage, define realistic scope and technical priorities before writing a single line of code.",
+
+    processStep2: "Fixed Proposal",
     processStep2Desc:
-      "I define features, timeline, and cost. No surprises. You know exactly what you get and when.",
-    processStep3: "Build Sprint",
+      "Defined features, timeline and fixed pricing. 50% upfront to start development.",
+
+    processStep3: "Focused Build Sprint",
     processStep3Desc:
-      "We build your MVP in focused sprints with weekly demos. You see progress every week.",
-    processStep4: "Launch & Handoff",
+      "Structured development with weekly progress visibility and direct communication.",
+
+    processStep4: "Delivery & Transfer",
     processStep4Desc:
-      "Deployment, documentation, and support. Your product is live and you own everything.",
+      "Deployment, repository ownership, credentials transfer and documentation. You own everything.",
 
     // About
-    aboutTag: "About Us",
-    aboutTitle: "We are JM Fullstack, your tech partner",
+    aboutTag: "About the Studio",
+    aboutTitle: "Execution-focused engineering team",
     aboutDescription:
-      "Fullstack developers with years of experience building products for startups and businesses across Latin America and beyond. We specialize in taking ideas from napkin to production. We've shipped dozens of MVPs, SaaS platforms, and automation systems. We work fast, communicate clearly, and deliver production-ready code.",
-    aboutStat1: "MVPs Shipped",
-    aboutStat2: "Happy Clients",
+      "JM Fullstack is a product engineering studio specialized in MVP development and scalable digital systems. We work with founders who need speed without sacrificing technical structure. Not a corporate agency. Not a solo freelancer. A focused execution partner.",
+    aboutStat1: "MVPs Delivered",
+    aboutStat2: "Clients",
     aboutStat3: "Technologies",
 
     // CTA
-    ctaTitle: "Ready to build?",
+    ctaTitle: "What stage is your product in?",
     ctaDescription:
-      "Stop waiting. Let's get your MVP out the door. Book a free discovery call or send us a message.",
-    ctaCta1: "Schedule a Call",
-    ctaCta2: "Send an Email",
-    ctaOr: "or email us directly at",
+      "Early idea or unstable system. We define the right next move.",
+    ctaCta1: "Launch my MVP",
+    ctaCta2: "Restructure my product",
+    ctaOr: "or email us at",
 
     // Footer
-    footerTagline: "Building the future, one MVP at a time.",
+    footerTagline: "Product engineering for founders who execute.",
     footerRights: "All rights reserved.",
-    footerServices: "Services",
-    footerCompany: "Company",
+    footerServices: "Engagement",
+    footerCompany: "Studio",
     footerAbout: "About",
     footerProcess: "Process",
     footerContact: "Contact",
   },
+
   es: {
     // Nav
-    navServices: "Servicios",
+    navServices: "Modelo",
     navProcess: "Proceso",
-    navAbout: "Sobre mi",
+    navAbout: "Estudio",
     navContact: "Contacto",
-    navCta: "Agendar Llamada",
+    navCta: "Evaluar Proyecto",
 
     // Hero
-    heroTag: "Desarrolladores Fullstack",
-    heroTitle: "Tu idea merece existir.",
-    heroTitleAccent: "Nosotros la construímos.",
+    heroTag: "Estudio de Ingeniería de Producto",
+    heroTitle: "Construimos productos digitales.",
+    heroTitleAccent: "Desde MVP hasta sistemas escalables.",
     heroDescription:
-      "Ayudamos a founders y empresas a sacar su MVP rapido. Web, mobile, IA, bots, automatizaciones \u2014 lo que haga falta para llegar al mercado.",
-    heroCta1: "Agendar Llamada",
-    heroCta2: "Escribinos",
+      "Diseñamos y desarrollamos MVPs listos para producción para founders y startups en crecimiento. Ya sea que estés validando una idea o necesites reestructurar tu sistema para escalar, trabajamos con foco en arquitectura limpia y ejecución rápida.",
+    heroCta1: "Evaluar mi proyecto",
+    heroCta2: "Enviar brief",
 
     // Services
-    servicesTag: "Que Hacemos",
-    servicesTitle: "Todo lo que necesitas para lanzar",
+    servicesTag: "Modelos de Trabajo",
+    servicesTitle: "Dos caminos claros según tu etapa",
     servicesDescription:
-      "De la idea al producto listo para produccion. Cubrimos cada capa del stack para que vos te enfoques en tu negocio.",
-    serviceWeb: "Desarrollo Web",
+      "No vendemos código aislado. Construimos productos digitales estructurados y preparados para crecer.",
+
+    serviceWeb: "Etapa A — Lanzamiento de MVP",
     serviceWebDesc:
-      "Aplicaciones web full-stack, landing pages, dashboards y paneles de admin. React, Next.js, Node.js y mas.",
-    serviceMobile: "Apps Móviles",
+      "MVP en 30–45 días con funcionalidades clave, autenticación y deploy profesional para validar con usuarios reales.",
+
+    serviceMobile: "Etapa B — Reestructuración para Escalar",
     serviceMobileDesc:
-      "Aplicaciones móviles multiplataforma con experiencia nativa. React Native, Flutter, o lo que se adapte a tus necesidades.",
-    serviceAI: "IA & Machine Learning",
+      "Si tu sistema actual es inestable o desordenado, rediseñamos backend, base de datos y arquitectura para crecimiento real.",
+
+    serviceAI: "Arquitectura SaaS Sólida",
     serviceAIDesc:
-      "Chatbots, integraciones de IA, motores de recomendación y automatización inteligente para tu producto.",
-    serviceBots: "Bots & Automatización",
+      "Sistema multi-tenant, roles bien definidos, backend estructurado y estándares de producción.",
+
+    serviceBots: "Integraciones & Pagos",
     serviceBotsDesc:
-      "Automatización de procesos, bots de Telegram/WhatsApp, scraping, integraciones con tus herramientas existentes.",
-    serviceSaas: "Arquitectura SaaS",
+      "Stripe, APIs externas, automatizaciones y flujos correctamente estructurados.",
+
+    serviceSaas: "Deploy Profesional",
     serviceSaasDesc:
-      "Sistemas multi-tenant, facturación por suscripcion, gestión de usuarios e infraestructura escalable.",
-    serviceAPI: "APIs & Integraciones",
+      "Configuración de infraestructura, entorno productivo y base técnica preparada para escalar.",
+
+    serviceAPI: "Documentación & Entrega",
     serviceAPIDesc:
-      "APIs RESTful y GraphQL, integraciones de terceros, pasarelas de pago y pipelines de datos.",
+      "Código limpio, transferencia de repositorio, accesos completos y documentación básica incluida.",
 
     // Process
-    processTag: "Como Funciona",
-    processTitle: "De cero a MVP en semanas, no meses",
-    processStep1: "Llamada de Descubrimiento",
+    processTag: "Marco de Ejecución",
+    processTitle: "Proceso claro. Entregables concretos.",
+    processStep1: "Diagnóstico Estratégico",
     processStep1Desc:
-      "Hablamos de tu idea, tus usuarios y tus objetivos. Hacemos las preguntas dificiles para construir lo correcto.",
-    processStep2: "Alcance & Propuesta",
+      "Analizamos tu etapa actual y definimos prioridades técnicas antes de comenzar el desarrollo.",
+
+    processStep2: "Propuesta Cerrada",
     processStep2Desc:
-      "Definimos funcionalidades, timeline y costo. Sin sorpresas. Sabes exactamente que recibís y cuando.",
-    processStep3: "Sprint de Desarrollo",
+      "Funcionalidades definidas, timeline claro y precio fijo. 50% upfront para iniciar.",
+
+    processStep3: "Sprint de Construcción",
     processStep3Desc:
-      "Construyo tu MVP en sprints enfocados con demos semanales. Ves progreso cada semana.",
-    processStep4: "Lanzamiento & Entrega",
+      "Desarrollo estructurado con visibilidad semanal y comunicación directa.",
+
+    processStep4: "Entrega & Transferencia",
     processStep4Desc:
-      "Deploy, documentación y soporte. Tu producto esta vivo y vos sos dueño de todo.",
+      "Deploy, transferencia de repositorio, credenciales y documentación. El proyecto es completamente tuyo.",
 
     // About
-    aboutTag: "Sobre Mi",
-    aboutTitle: "Somos JM Fullstack, tu socio tecnologico",
+    aboutTag: "Sobre el Estudio",
+    aboutTitle: "Equipo de ingeniería enfocado en ejecución",
     aboutDescription:
-      "Desarrolladores fullstack con años de experiencia construyendo productos para startups y empresas en Latinoamerica y el mundo. Nos especializamos en llevar ideas del papel a produccion. Llevamos decenas de MVPs, plataformas SaaS y sistemas de automatizacion entregados. Trabajo rápido, comunicación clara y entrega de codigo listo para producción.",
+      "JM Fullstack es un estudio de desarrollo especializado en MVPs y sistemas digitales escalables. Trabajamos con founders que necesitan velocidad sin sacrificar estructura técnica. No somos agencia corporativa ni freelancer aislado: somos un partner de ejecución enfocado en resultados.",
     aboutStat1: "MVPs Entregados",
-    aboutStat2: "Clientes Felices",
+    aboutStat2: "Clientes",
     aboutStat3: "Tecnologías",
 
     // CTA
-    ctaTitle: "Listo para construir?",
+    ctaTitle: "¿En qué etapa está tu producto?",
     ctaDescription:
-      "Deja de esperar. Saquemos tu MVP a la calle. Agenda una llamada gratis o mandanos un mensaje.",
-    ctaCta1: "Agendar Llamada",
-    ctaCta2: "Enviar Email",
-    ctaOr: "o escribime directo a",
+      "Idea inicial o sistema que necesita estructura. Definimos el siguiente paso juntos.",
+    ctaCta1: "Quiero lanzar mi MVP",
+    ctaCta2: "Necesito reestructurar mi producto",
+    ctaOr: "o escribinos a",
 
     // Footer
-    footerTagline: "Construyendo el futuro, un MVP a la vez.",
+    footerTagline: "Ingeniería de producto para founders que ejecutan.",
     footerRights: "Todos los derechos reservados.",
-    footerServices: "Servicios",
-    footerCompany: "Empresa",
-    footerAbout: "Sobre Mi",
+    footerServices: "Modelo",
+    footerCompany: "Estudio",
+    footerAbout: "Sobre el Estudio",
     footerProcess: "Proceso",
     footerContact: "Contacto",
   },
