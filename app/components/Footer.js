@@ -16,7 +16,7 @@ export default function Footer() {
 
         <div>
           <h4>Contact</h4>
-          <p>hola@jmfullstack.lat</p>
+          <p>juan.oddone@jmfullstack.lat</p>
         </div>
       </div>
 
