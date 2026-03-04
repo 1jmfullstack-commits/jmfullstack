@@ -33,7 +33,7 @@ export function Footer() {
               {t("footerTagline")}
             </p>
             <div className="mt-6 flex items-center gap-4">
-              <a
+              {/*<a
                 href="https://github.com"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -59,7 +59,7 @@ export function Footer() {
                 aria-label="Twitter"
               >
                 <Twitter className="size-5" />
-              </a>
+              </a>*/}
             </div>
           </div>
 
