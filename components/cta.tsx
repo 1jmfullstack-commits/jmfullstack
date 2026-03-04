@@ -33,7 +33,7 @@ export default function CTA() {
             size="lg"
             className="border-border text-foreground hover:bg-secondary hover:text-foreground text-base px-8 h-12 w-full sm:w-auto"
           >
-            <a href="mailto:juan.oddone@jmfullstack.lat?subject=Evaluación%20Gratis%20-%20Proyecto">
+            <a href="mailto:projects@jmfullstack.com?subject=Evaluación%20Gratis%20-%20Proyecto">
               <Mail className="mr-2 size-4" />
               Evaluación Gratis (Email)
             </a>
