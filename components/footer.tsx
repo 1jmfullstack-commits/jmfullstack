@@ -108,10 +108,10 @@ export function Footer() {
             {"2026 jmfullstack. "}{t("footerRights")}
           </p>
           <a
-            href="mailto:juan.oddone@fullstack.lat"
+            href="mailto:projects@jmfullstack.com"
             className="text-xs text-muted-foreground hover:text-primary transition-colors font-mono"
           >
-            juan.oddone@fullstack.lat
+            projects@jmfullstack.com
           </a>
         </div>
       </div>
