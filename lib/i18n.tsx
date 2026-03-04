@@ -98,7 +98,7 @@ const translations = {
     diagPaidCta: "Express Audit — USD 150",
     diagPaidUrl: "https://payoneer.com",
     diagFreeCta: "Free Evaluation (48h)",
-    diagFreeEmail: "juan.oddone@jmfullstack.lat",
+    diagFreeEmail: "projects@jmfullstack.com",
     diagFreeSubject: "Free evaluation (48h) — Access to repo / product",
     diagNote: "The audit is discounted if we move forward with development.",
 
@@ -228,7 +228,7 @@ const translations = {
     diagPaidCta: "Diagnóstico Express — USD 150",
     diagPaidUrl: "https://payoneer.com",
     diagFreeCta: "Evaluación Gratis (48h)",
-    diagFreeEmail: "juan.oddone@jmfullstack.lat",
+    diagFreeEmail: "projects@jmfullstack.com",
     diagFreeSubject: "Evaluación gratis (48h) — Acceso a repo / producto",
     diagNote: "El diagnóstico se descuenta si avanzamos con el desarrollo.",
 
