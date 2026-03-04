@@ -55,7 +55,7 @@ export function Hero() {
               size="lg"
               className="border-border text-foreground hover:bg-secondary hover:text-foreground text-base px-8 h-12"
             >
-              <a href="mailto:juan.oddone@jmfullstack.lat">
+              <a href="mailto:projects@jmfullstack.com">
                 <Mail className="mr-2 size-4" />
                 {t("heroCta2")}
               </a>
