@@ -76,7 +76,7 @@ export default function ChatbotWidget() {
       `Name: ${name}\nEmail: ${email}\nGoal: ${goal}`
     );
 
-    window.location.href = `mailto:juan.oddone@jmfullstack.lat?subject=${subject}&body=${body}`;
+    window.location.href = `mailto:projects@jmfullstack.com?subject=${subject}&body=${body}`;
   };
 
   const next = (value: string) => {
