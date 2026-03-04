@@ -91,7 +91,7 @@ export function About() {
                   </p>
                   <p className="pl-4">
                     <span className="text-muted-foreground">{"email:"}</span>{" "}
-                    <span className="text-primary">{'"juan.oddone@fullstack.lat"'}</span>,
+                    <span className="text-primary">{'"projects@jmfullstack.com"'}</span>,
                   </p>
                   <p>{"}"}</p>
                 </div>
